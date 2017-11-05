@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/chat_select_choice_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/chat_select_choice_btn_information"
+            android:background="#ffffffff"
+            android:text="역술정보"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffffff"
+            android:id="@+id/chat_select_choice_btn_pickture"
+            android:text="사진"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/chat_select_choice_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/chat_select_choice_btn_myinformation"
+            android:background="#ffffffff"
+            android:text="나의 역술정보"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffffff"
+            android:id="@+id/chat_select_choice_btn_friendinformation"
+            android:text="친구의 역술정보"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/chat_select_choice_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+    <ListView
+        android:id="@+id/chat_select_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+        <Button
+            android:id="@+id/chat_select_send_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="보내기"/>
+        </LinearLayout>
+
+</LinearLayout>

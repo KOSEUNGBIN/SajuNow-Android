@@ -1,0 +1,8 @@
+/build
+android-async-http-1.4.7/**
+android-async-http-1.4.9/**
+library/**
+ViewPagerIndicator/**
+google-services.json
+*.log
+*.jar

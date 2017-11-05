@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9bbad8"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/simple_chat_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#800020"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <Button
+                android:id="@+id/simple_chat_report_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_gravity="right"
+                android:background="#800020"
+                android:clickable="true"
+                android:text="후기작성" />
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/question1_mark_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:padding="5dp"
+                    android:background="@drawable/profile_icon"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Question"
+                    android:textSize="15sp"
+                    android:visibility="visible"/>
+
+                <TextView
+                    android:id="@+id/question1_tv"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#EEFFFF"
+                    android:textSize="15sp"
+                    android:padding="5dp"
+                    android:text="질문1"
+                    android:visibility="visible"/>
+
+                <TextView
+                    android:id="@+id/answer1_mark_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:padding="5dp"
+                    android:background="@drawable/profile_icon"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginRight="10dp"
+                    android:text="Answer"
+                    android:textSize="15sp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/answer1_tv"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="#EEFFFF"
+                    android:gravity="right"
+                    android:text="답변1"
+                    android:padding="5dp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/question2_mark_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:padding="5dp"
+                    android:background="@drawable/profile_icon"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="50dp"
+                    android:textSize="15sp"
+                    android:text="Question"
+                    android:visibility="visible"/>
+
+                <TextView
+                    android:id="@+id/question2_tv"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#EEFFFF"
+                    android:padding="5dp"
+                    android:text="질문2"
+                    android:visibility="visible"/>
+
+                <TextView
+                    android:id="@+id/answer2_mark_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:padding="5dp"
+                    android:background="@drawable/profile_icon"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginRight="10dp"
+                    android:text="Answer"
+                    android:textSize="15sp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/answer2_tv"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    android:gravity="right"
+                    android:background="#EEFFFF"
+                    android:text="답변2"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/question3_mark_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:padding="5dp"
+                    android:background="@drawable/profile_icon"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="50dp"
+                    android:textSize="15sp"
+                    android:text="Question"
+                    android:visibility="visible"/>
+
+                <TextView
+                    android:id="@+id/question3_tv"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#EEFFFF"
+                    android:padding="5dp"
+                    android:text="질문3"
+                    android:visibility="visible"/>
+
+                <TextView
+                    android:id="@+id/answer3_mark_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:padding="5dp"
+                    android:background="@drawable/profile_icon"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginRight="10dp"
+                    android:text="Answer"
+                    android:textSize="15sp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/answer3_tv"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="#EEFFFF"
+                    android:gravity="right"
+                    android:padding="5dp"
+                    android:text="답변3"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/waiting_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_margin="30dp"
+                    android:textSize="20sp"
+                    android:text="역술인의 답변을 기다리고 있습니다."
+                    android:visibility="visible"/>
+<!--
+                <TextView
+                    android:id="@+id/question2_tv"
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/chat_background_me"
+                    android:text="질문2"
+                    android:visibility="visible"/>
+
+                <TextView
+                    android:id="@+id/answer2_tv"
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/chat_background_you"
+                    android:text="답변2"
+                    android:visibility="visible"/>
+
+                <TextView
+                    android:id="@+id/question3_tv"
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/chat_background_me"
+                    android:text="질문3"
+                    android:visibility="visible"/>
+
+                <TextView
+                    android:id="@+id/answer3_tv"
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/chat_background_you"
+                    android:text="답변3"
+                    android:visibility="visible"/>-->
+            </LinearLayout>
+        </ScrollView>
+
+
+
+</LinearLayout>

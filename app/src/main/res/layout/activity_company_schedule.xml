@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="landvibe.co.kr.destiny01.CompanyScheduleActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:background="#FCFCFC"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <ImageView
+            android:id="@+id/schedule_left_arrow"
+            android:src="@drawable/left_arrow"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:onClick="true"
+            />
+
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:textSize="25sp"
+            android:background="@drawable/round_calendar"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:id="@+id/myReservation_date_tv"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="Year-Month-Day"/>
+
+        <ImageView
+            android:id="@+id/schedule_right_arrow"
+            android:src="@drawable/right_arrow"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:onClick="true"
+            />
+
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:text="9시 ~ 10시"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    />
+                <ToggleButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:textOn="상담가능"
+                    android:textOff="예약중"
+                    android:id="@+id/slot_9_btn"
+                    android:text="상담가능"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:text="10시 ~ 11시"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    />
+                <ToggleButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:textOn="상담가능"
+                    android:textOff="예약중"
+                    android:id="@+id/slot_10_btn"
+                    android:text="상담가능"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:text="11시 ~ 12시"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    />
+                <ToggleButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:textOn="상담가능"
+                    android:textOff="예약중"
+                    android:id="@+id/slot_11_btn"
+                    android:text="상담가능"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:text="12시 ~ 13시"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    />
+                <ToggleButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:textOn="상담가능"
+                    android:textOff="예약중"
+                    android:id="@+id/slot_12_btn"
+                    android:text="상담가능"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:text="13시 ~ 14시"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    />
+                <ToggleButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:textOn="상담가능"
+                    android:textOff="예약중"
+                    android:id="@+id/slot_13_btn"
+                    android:text="상담가능"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:text="14시 ~ 15시"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    />
+                <ToggleButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:textOn="상담가능"
+                    android:textOff="예약중"
+                    android:id="@+id/slot_14_btn"
+                    android:text="상담가능"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:text="15시 ~ 16시"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    />
+                <ToggleButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:textOn="상담가능"
+                    android:textOff="예약중"
+                    android:id="@+id/slot_15_btn"
+                    android:text="상담가능"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:text="16시 ~ 17시"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    />
+                <ToggleButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:textOn="상담가능"
+                    android:textOff="예약중"
+                    android:id="@+id/slot_16_btn"
+                    android:text="상담가능"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:text="17시 ~ 18시"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    />
+                <ToggleButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:textOn="상담가능"
+                    android:textOff="예약중"
+                    android:id="@+id/slot_17_btn"
+                    android:text="상담가능"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:text="18시 ~ 19시"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    />
+                <ToggleButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:textOn="상담가능"
+                    android:textOff="예약중"
+                    android:id="@+id/slot_18_btn"
+                    android:text="상담가능"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:text="19시 ~ 20시"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    />
+                <ToggleButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:textSize="10sp"
+                    android:textOn="상담가능"
+                    android:textOff="예약중"
+                    android:id="@+id/slot_19_btn"
+                    />
+
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/submit_btn"
+                android:text="Submit"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

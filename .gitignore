@@ -1,0 +1,14 @@
+*.iml
+.gradle
+/local.properties
+/.idea/**
+.DS_Store
+/build
+/captures
+android-async-http-1.4.7/**
+android-async-http-1.4.9/**
+library/**
+ViewPagerIndicator/**
+google-services.json
+*.log
+*.jar

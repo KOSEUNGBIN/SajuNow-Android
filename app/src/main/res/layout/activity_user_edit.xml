@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_useredit"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:layout_width="match_parent"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#800020"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="생년월일"
+                android:textColor="#000000"
+                android:textSize="17sp"/>
+
+
+            <TextView
+                android:id="@+id/userEdit_birthday_tx"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:hint="예) 1992년 3월 3일"
+                android:onClick="true"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="17sp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="태어난 시간"
+                android:textColor="#000000"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:id="@+id/userEdit_birthtime_tx"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:hint="예) 08시 30분"
+                android:onClick="true"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="17sp"/>
+        </LinearLayout>
+
+
+        <RadioGroup
+            android:id="@+id/userEdit_solarunar_rg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/userEdit_minus_common_rb"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:baselineAlignedChildIndex="0"
+
+                android:text="음력/평달"
+                android:textSize="17sp"/>
+
+            <RadioButton
+                android:id="@+id/userEdit_minus_special_rb"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="음력/윤달"
+                android:textSize="17sp"/>
+
+            <RadioButton
+                android:id="@+id/userEdit_plus_common_rb"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="양력/평달"
+                android:textSize="17sp"/>
+
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/userEdit_gender_rg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="30dp"
+            android:baselineAlignedChildIndex="0"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/userEdit_man_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="남자"
+                android:textSize="17sp"/>
+
+            <RadioButton
+                android:id="@+id/userEdit_woman_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="여자"
+                android:textSize="17sp"/>
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:baselineAligned="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/userEdit_cancel_bt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="#333333"
+            android:gravity="center"
+            android:text="취소"
+            android:textColor="#ffffff"
+            android:textSize="17sp"
+            android:textStyle="bold"/>
+
+        <Button
+
+            android:id="@+id/userEdit_submit_bt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="#800020"
+            android:gravity="center"
+            android:text="확인"
+            android:textColor="#ffffff"
+            android:textSize="17sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="email_List" >
+        <item>선택하세요</item>
+        <item>직접 입력</item>
+        <item>gmail.com</item>
+        <item>naver.com</item>
+        <item>hanmail.net</item>
+        <item>nate.com</item>
+        <item>yahoo.co.kr</item>
+        <item>hotmail.com</item>
+        <item>korea.com</item>
+        <item>chollian.net</item>
+        <item>dreamwiz.com</item>
+        <item>empal.com</item>
+        <item>freechal.com</item>
+        <item>hananet.net</item>
+        <item>hanmir.com</item>
+        <item>hitel.net</item>
+        <item>kornet.net</item>
+        <item>lycos.co.kr</item>
+        <item>paran.com</item>
+        <item>sayclub.com</item>
+    </string-array>
+
+    <string-array name="password_List" >
+        <item>!</item>
+        <item>\@</item>
+        <item>#</item>
+        <item>$</item>
+        <item>%</item>
+        <item>^</item>
+        <item>*</item>
+        <item>(</item>
+        <item>)</item>
+        <item>-</item>
+        <item>_</item>
+        <item>+</item>
+        <item>=</item>
+        <item>{</item>
+        <item>}</item>
+        <item>[</item>
+        <item>|</item>
+        <item>;</item>
+        <item>:</item>
+        <item>\'</item>
+        <item>"</item>
+        <item>,</item>
+        <item>.</item>
+        <item>/</item>
+        <item>\?</item>
+        <item>`</item>
+        <item>~</item>
+    </string-array>
+
+    <string-array name="profile_category_choice_items" >
+        <item>전문사주</item>
+        <item>간단사주</item>
+        <item>관상손금</item>
+        <item>해몽</item>
+        <item>작명</item>
+    </string-array>
+
+    <array name="progressLoader">
+
+        <item>#800020</item>
+        <item>#d35400</item>
+        <item>#c0392b</item>
+
+    </array>
+
+</resources>

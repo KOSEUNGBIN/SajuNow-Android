@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="all">
+
+        <item
+            android:id="@+id/sidebar_user_inform"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="공지사항" />
+
+        <item
+            android:id="@+id/sidebar_user_mycompany"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="나의 역술인" />
+        <item
+            android:id="@+id/sidebar_user_history"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="상담내역" />
+
+        <item
+            android:id="@+id/sidebar_user_addfriend"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="지인정보등록" />
+    </group>
+
+    <!--사이드바 하위 메뉴에 대한 주석-->
+
+    <item android:title="나의 계정">
+        <menu>
+            <item
+                android:id="@+id/sidebar_user_config"
+                android:icon="@drawable/ic_menu_share"
+                android:title="설정" />
+            <item
+                android:id="@+id/sidebar_user_myinfo"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="회원정보변경" />
+            <item
+                android:id="@+id/sidebar_user_login"
+                android:icon="@drawable/ic_menu_share"
+                android:title="로그인" />
+            <!--<item-->
+                <!--android:id="@+id/nav_send"-->
+                <!--android:icon="@drawable/ic_menu_send"-->
+                <!--android:title="Send" />-->
+        </menu>
+    </item>
+
+</menu>
+

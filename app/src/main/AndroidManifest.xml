@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="landvibe.co.kr.destiny01">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- GCM 권한 -->
+    <permission
+        android:name="landvibe.co.kr.destiny01.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="landvibe.co.kr.destiny01.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".main.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            android:screenOrientation="portrait"
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".chat.ChatActivity"
+            android:label="채팅방" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".InformationActivity"
+            android:label="공지사항" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".FaqActivity"
+            android:label="자주 묻는 질문" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".FriendActivity"
+            android:label="지인 정보 등록" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".profile.ProfileActivity"
+            android:label="" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".UserEditActivity"
+            android:label="회원 정보 변경" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".config.ConfigActivity"
+            android:label="설정" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".login.SignUpClauseOneActivity"
+            android:label="이용 약관" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".login.SignUpClauseTwoActivity"
+            android:label="개인 정보 취급방지" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".MyCompanyActivity"
+            android:label="나의 역술인 정보" />
+        <activity android:name=".login.LoginActivity"
+            android:screenOrientation="portrait"
+            android:label="LOGIN"/>
+        <activity android:name=".login.SignUpActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".HistoryActivity"
+            android:label="History"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".chat.ChatDialog"/>
+        <activity android:name=".chat.ChatEndDialog"/>
+        <activity android:name=".ReportActivity"
+            android:label="후기작성"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".chat.SimplePrepareActivity"
+            android:label="상담내용 작성"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".chat.SimpleChatActivity"
+            android:label="간단 사주"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".chat.RedirectActivity"/>
+        <activity android:name=".pay.PayNormalActivity"
+            android:label="사주 결제"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".pay.PaySimpleActivity"
+            android:label="간단 사주 결제"
+            android:screenOrientation="portrait"/>
+
+
+        <!-- 네이버 아이디로 로그인에서 사용하는 액티비티를 등록 -->
+        <activity android:name="com.nhn.android.naverlogin.ui.OAuthLoginActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.nhn.android.naverlogin.ui.OAuthLoginInAppBrowserActivity"
+            android:label="OAuth2.0 In-app"/>
+
+        <!-- GCM 처리 서비스 -->
+        <service android:name=".chat.ChatService" />
+        <service
+            android:name=".login.RegistrationIntentService"
+            android:exported="false" />
+        <service android:name=".login.PreRegistrationIntentService" />
+
+        <!-- GCM 관련 브로드캐스트 메시지를 받을 수신자 -->
+        <receiver
+            android:name=".chat.ChatBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+
+                <!-- 메시지 수신 메시지 지정 -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="landvibe.co.kr.destiny01" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+
+    </application>
+
+</manifest>
